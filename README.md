@@ -1,3 +1,14 @@
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ tex2jax: {
+ inlineMath: [['$', '$'] ],
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ }
+ });
+</script>
+
 # t-vMF Similarity
 
 The Pytorch implementation for the CVPR2021 paper of "[t-vMF Similarity for Regularizing In-Class Feature Distribution](https://staff.aist.go.jp/takumi.kobayashi/publication/2021/CVPR2021.pdf)" by [Takumi Kobayashi](https://staff.aist.go.jp/takumi.kobayashi/).
@@ -52,8 +63,8 @@ sh do_imbalance.sh 0,1 imagenetlt ResNet10Feature tvMFLoss_k16
 
 | Method  | ImageNet-LT | iNaturalist-2018 |
 |---|---|---|
-| t-vMF ({\kappa=16}) | 57.30   | 28.92|
-| t-vMF ({\kappa=64}) | 56.31   | 29.69|
+| t-vMF ($\kappa=16$) | 57.30   | 28.92|
+| t-vMF ($\kappa=64$) | 56.31   | 29.69|
 | Others |  58.2 [1] | 32.00 [2] |
 
 
